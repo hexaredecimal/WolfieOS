@@ -1,0 +1,115 @@
+compile_gml(FontPickerDialog.gml FontPickerDialogGML.h font_picker_dialog_gml)
+compile_gml(FilePickerDialog.gml FilePickerDialogGML.h file_picker_dialog_gml)
+
+set(SOURCES
+    AboutDialog.cpp
+    AbstractButton.cpp
+    AbstractSlider.cpp
+    AbstractTableView.cpp
+    AbstractView.cpp
+    Action.cpp
+    ActionGroup.cpp
+    Application.cpp
+    AutocompleteProvider.cpp
+    BoxLayout.cpp
+    BreadcrumbBar.cpp
+    Button.cpp
+    Calendar.cpp
+    CheckBox.cpp
+    Clipboard.cpp
+    ColorInput.cpp
+    ColorPicker.cpp
+    ColumnsView.cpp
+    ComboBox.cpp
+    Command.cpp
+    Desktop.cpp
+    Dialog.cpp
+    DisplayLink.cpp
+    DragOperation.cpp
+    EditingEngine.cpp
+    EmojiInputDialog.cpp
+    Event.cpp
+    FileIconProvider.cpp
+    FilePicker.cpp
+    FilePickerDialogGML.h
+    FileSystemModel.cpp
+    FilteringProxyModel.cpp
+    FontPicker.cpp
+    FontPickerDialogGML.h
+    Frame.cpp
+    GMLFormatter.cpp
+    GMLLexer.cpp
+    GMLParser.cpp
+    GMLSyntaxHighlighter.cpp
+    GroupBox.cpp
+    HeaderView.cpp
+    INILexer.cpp
+    INISyntaxHighlighter.cpp
+    Icon.cpp
+    IconView.cpp
+    ImageWidget.cpp
+    InputBox.cpp
+    JsonArrayModel.cpp
+    Label.cpp
+    Layout.cpp
+    LazyWidget.cpp
+    LinkLabel.cpp
+    ListView.cpp
+    Menu.cpp
+    MenuBar.cpp
+    MenuItem.cpp
+    MessageBox.cpp
+    Model.cpp
+    ModelIndex.cpp
+    ModelSelection.cpp
+    MultiView.cpp
+    Notification.cpp
+    OpacitySlider.cpp
+    Painter.cpp
+    ProcessChooser.cpp
+    ProgressBar.cpp
+    RadioButton.cpp
+    RegularEditingEngine.cpp
+    ResizeCorner.cpp
+    RunningProcessesModel.cpp
+    ScrollBar.cpp
+    ScrollableWidget.cpp
+    SeparatorWidget.cpp
+    Shortcut.cpp
+    Slider.cpp
+    SortingProxyModel.cpp
+    SpinBox.cpp
+    Splitter.cpp
+    StackWidget.cpp
+    StatusBar.cpp
+    TabWidget.cpp
+    TableView.cpp
+    TextBox.cpp
+    TextDocument.cpp
+    TextEditor.cpp
+    ToolBar.cpp
+    ToolBarContainer.cpp
+    TreeView.cpp
+    UndoStack.cpp
+    Variant.cpp
+    VimEditingEngine.cpp
+    Widget.cpp
+    Window.cpp
+    WindowServerConnection.cpp
+    Wizards/WizardDialog.cpp
+    Wizards/AbstractWizardPage.cpp
+    Wizards/CoverWizardPage.cpp
+    Wizards/WizardPage.cpp
+)
+
+set(GENERATED_SOURCES
+    ../../Services/WindowServer/WindowClientEndpoint.h
+    ../../Services/WindowServer/WindowServerEndpoint.h
+    ../../Services/NotificationServer/NotificationClientEndpoint.h
+    ../../Services/NotificationServer/NotificationServerEndpoint.h
+    ../../Services/Clipboard/ClipboardClientEndpoint.h
+    ../../Services/Clipboard/ClipboardServerEndpoint.h
+)
+
+serenity_lib(LibGUI gui)
+target_link_libraries(LibGUI LibCore LibGfx LibIPC LibThread LibRegex LibSyntax)

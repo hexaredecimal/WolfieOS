@@ -1,0 +1,24 @@
+endpoint WebContentClient = 90
+{
+    DidStartLoading(URL url) =|
+    DidFinishLoading(URL url) =|
+    DidPaint(Gfx::IntRect content_rect, i32 bitmap_id) =|
+    DidInvalidateContentRect(Gfx::IntRect content_rect) =|
+    DidChangeSelection() =|
+    DidRequestCursorChange(i32 cursor_type) =|
+    DidLayout(Gfx::IntSize content_size) =|
+    DidChangeTitle(String title) =|
+    DidRequestScroll(int wheel_delta) =|
+    DidRequestScrollIntoView(Gfx::IntRect rect) =|
+    DidHoverLink(URL url) =|
+    DidUnhoverLink() =|
+    DidClickLink(URL url, String target, unsigned modifiers) =|
+    DidMiddleClickLink(URL url, String target, unsigned modifiers) =|
+    DidRequestContextMenu(Gfx::IntPoint content_position) =|
+    DidRequestLinkContextMenu(Gfx::IntPoint content_position, URL url, String target, unsigned modifiers) =|
+    DidRequestAlert(String message) => ()
+    DidRequestConfirm(String message) => (bool result)
+    DidRequestPrompt(String message, String default_) => (String response)
+    DidGetSource(URL url, String source) =|
+    DidJSConsoleOutput(String method, String line) =|
+}

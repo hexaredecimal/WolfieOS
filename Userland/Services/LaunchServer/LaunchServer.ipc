@@ -1,0 +1,12 @@
+endpoint LaunchServer = 101
+{
+    Greet() => ()
+    OpenURL(URL url, String handler_name) => (bool response)
+    GetHandlersForURL(URL url) => (Vector<String> handlers)
+    GetHandlersWithDetailsForURL(URL url) => (Vector<String> handlers_details)
+
+    AddAllowedURL(URL url) => ()
+    AddAllowedHandlerWithAnyURL(String handler_name) => ()
+    AddAllowedHandlerWithOnlySpecificURLs(String handler_name, Vector<URL> urls) => ()
+    SealAllowlist() => ()
+}
