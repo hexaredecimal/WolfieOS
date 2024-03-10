@@ -1,4 +1,4 @@
 # WolfieOS
 >> A Serenity based operating system.
 
-![2024-03-06_00-22](https://github.com/hexaredecimal/WolfieOS/assets/51314855/daab5765-572c-4082-981e-e1060e8daa14)
+![2024-03-10_18-22](https://github.com/hexaredecimal/WolfieOS/assets/51314855/77f525a7-bf09-47ac-b92d-216f99ffe074)
